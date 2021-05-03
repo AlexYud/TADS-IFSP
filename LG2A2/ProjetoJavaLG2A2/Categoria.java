@@ -1,0 +1,6 @@
+package ProjetoLG2A2;
+
+public enum Categoria {
+
+	SALÁRIO, INVESTIMENTO, ÚNICO, EMPRÉSTIMO, ALIMENTAÇÃO, TRANSPORTE, RESIDÊNCIA, VENDA, PESSOAL;
+}

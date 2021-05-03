@@ -1,0 +1,6 @@
+package ProjetoLG2A2;
+
+public enum Conta {
+
+	ITAU, BRADESCO, SANTANDER, CARTEIRA, CAIXA, CARTÃO_DE_CRÉDITO, CARTÃO_DE_DÉBITO, DINHEIRO;
+}
