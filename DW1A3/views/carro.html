@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carro</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+</head>
+
+<body id="body">
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html"><img class="homeImg" src="../images/homelogo.png" alt="home"> Home</a></li>
+        <li><a href="restaurante.html">Restaurante</a></li>
+        <li><a href="carro.html">Carro</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="titulo">Calcular preço</h1>
+  <fieldset class="campo">
+    <h1 class="titulo2">Preencha os dados do veículo</h1>
+    <hr>
+    <br>
+    <div class="grid">
+      <div class="item">
+        <label for="marca"><strong>Marca:</strong></label>
+        <input type="text" id="marca">
+      </div>
+      <div class="item">
+        <label for="modelo"><strong>Modelo:</strong></label>
+        <input type="text" id="modelo">
+      </div>
+      <div class="item">
+        <label for="ano"><strong>Ano de fabricação:</strong></label>
+        <input type="number" id="ano">
+      </div>
+      <div class="item">
+        <label for="preco"><strong>Preço de venda:</strong></label>
+        <input type="number" id="preco">
+      </div>
+      <div class="item">
+        <label for="desconto"><strong>Percentual desconto (à vista):</strong></label>
+        <input type="number" id="desconto">
+      </div>
+      <div class="item">
+        <label for="entrada"><strong>Entrada (a prazo):</strong></label>
+        <input type="number" id="entrada">
+      </div>
+      <button class="botao d" id="btDados">Dados</button>
+      <button class="botao c" id="btCalcular">Calcular</button>
+    </div>
+
+    <div class="saidaErr" id="saidaErr">
+      <hr>
+      <div class="grid">
+        <div class="item" id="divMarcaErr">
+          <label for="outMarcaErr"><strong>Marca:</strong></label>
+          <span id="outMarcaErr"></span>
+        </div>
+        <div class="item" id="divModeloErr">
+          <label for="outModeloErr"><strong>Modelo:</strong></label>
+          <span id="outModeloErr"></span>
+        </div>
+        <div class="item" id="divAnoErr">
+          <label for="outAnoErr"><strong>Ano de fabricação:</strong></label>
+          <span id="outAnoErr"></span>
+        </div>
+        <div class="item" id="divPrecoErr">
+          <label for="outPrecoErr"><strong>Preço de venda:</strong></label>
+          <span id="outPrecoErr"></span>
+        </div>
+        <div class="item" id="divDescErr">
+          <label for="outDescErr"><strong>Desconto:</strong></label>
+          <span id="outDescErr"></span>
+        </div>
+        <div class="item" id="divEntradaErr">
+          <label for="outEntradaErr"><strong>Entrada:</strong></label>
+          <span id="outEntradaErr"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="saidaDad" id="saidaDad">
+      <hr>
+      <div class="grid">
+        <div class="item">
+          <label for="outMarca"><strong>Marca:</strong></label>
+          <span id="outMarca"></span>
+        </div>
+        <div class="item">
+          <label for="outModelo"><strong>Modelo:</strong></label>
+          <span id="outModelo"></span>
+        </div>
+        <div class="item">
+          <label for="outAno"><strong>Ano de fabricação:</strong></label>
+          <span id="outAno"></span>
+        </div>
+        <div class="item">
+          <label for="outPreco"><strong>Preço de venda:</strong></label>
+          <span id="outPreco"></span>
+        </div>
+        <div class="item">
+          <label for="outData"><strong>Data de registro:</strong></label>
+          <span id="outData"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="saidaCalc" id="saidaCalc">
+      <hr>
+      <div class="grid">
+        <div class="item">
+          <label for="outPv"><strong>Preço à vista:</strong></label>
+          <ul>
+            <li id="outPv"></li>
+          </ul>
+        </div>
+        <div class="item">
+          <label for="ulPp"><strong>Preço a prazo:</strong></label>
+          <ul id="ulPp">
+            <li id="outPp1"></li>
+            <li id="outPp2"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+</body>
+
+</html>
+<script src="../javascript/javascriptCarro.js"></script>

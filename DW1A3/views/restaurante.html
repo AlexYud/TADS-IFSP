@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+</head>
+
+<body id="body">
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html"><img class="homeImg" src="../images/homelogo.png" alt="home"> Home</a></li>
+        <li><a href="restaurante.html">Restaurante</a></li>
+        <li><a href="carro.html">Carro</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="titulo">Balança</h1>
+  <fieldset class="campo">
+    <h1 class="titulo2">Dados da balança</h1>
+    <hr>
+    <br>
+    <div class="grid">
+      <div class="item">
+        <label for="precoKg"><strong>Preco por Kg:</strong></label>
+        <input type="number" id="precoKg">
+      </div>
+      <div class="item">
+        <label for="consumo"><strong>Consumo (g):</strong></label>
+        <input type="number" id="consumo">
+      </div>
+      <button class="botao d" id="btDados">Listar vendas</button>
+      <button class="botao c" id="btCalcular">Calcular</button>
+    </div>
+
+    <div class="saidaErr" id="saidaErr">
+      <hr>
+      <div class="grid">
+        <div class="item" id="divPrecoErr">
+          <label for="outPrecoErr"><strong>Preço por Kg: </strong></strong></label>
+          <span id="outPrecoErr"></span>
+        </div>
+        <div class="item" id="divConsumoErr">
+          <label for="outConsumoErr"><strong>Consumo (g):</strong></label>
+          <span id="outConsumoErr"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="saidaDad" id="saidaDad">
+      <hr>
+      <br>
+      <div class="grid">
+        <div class="item">
+          <table id="tabela">
+            <tr>
+              <th>Consumo (g)</th>
+              <th>Valor (R$)</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="item">
+          <label for="outTotal"><strong>Total (R$): </strong></label>
+          <br>
+          <span id="outTotal"></span>
+          <br>
+          <label for="outPesoMax"><strong>Peso máx. vendido (g): </strong></label>
+          <br>
+          <span id="outPesoMax"></span>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div class="saidaCalc" id="saidaCalc">
+      <hr>
+      <div class="grid">
+        <div class="item">
+          <label for="outValor"><strong>Valor a ser pago: </strong></label>
+          <ul>
+            <li id="outValor"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</body>
+
+</html>
+<script src="../javascript/javascriptRestaurante.js"></script>
